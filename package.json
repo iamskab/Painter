@@ -5,7 +5,8 @@
     "main": "./build/js/app.js",
     "scripts": {
         "dev": "parcel src/index.html",
-        "build": "parcel build src/index.html --out-dir build"
+        "build": "parcel build src/index.html --out-dir build",
+        "deploy": "gh-pages -d build"
 
     },
     "repository": {
