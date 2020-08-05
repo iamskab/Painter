@@ -1,0 +1,32 @@
+{
+    "name": "painter",
+    "version": "1.0.0",
+    "description": "Draw anything you'd like",
+    "main": "./build/js/app.js",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html --out-dir build"
+
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iamskab/Painter.git"
+    },
+    "keywords": [
+        "draw",
+        "things"
+    ],
+    "author": "Sourav Karmakar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/iamskab/Painter/issues"
+    },
+    "homepage": "https://iamskab.github.io/Painter",
+    "dependencies": {
+        "parcel-bundler": "^1.12.3",
+        "sass": "^1.16.1"
+    },
+    "devDependencies": {
+        "gh-pages": "^3.1.0"
+    }
+}
