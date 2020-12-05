@@ -1,4 +1,7 @@
 # Painter
+
+[![Join the chat at https://gitter.im/Painter_KWOC/community](https://badges.gitter.im/Painter_KWOC/community.svg)](https://gitter.im/Painter_KWOC/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Painter is a canvas painting web app, where you can draw and express your creativity, and download your painting.
 Live Version : [Painter](https://iamskab.github.io/Painter)
 ![Painter](/screenshots/Painter.png)
