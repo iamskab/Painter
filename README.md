@@ -4,7 +4,7 @@
 
 Painter is a canvas painting web app, where you can draw and express your creativity, and download your painting.
 Live Version : [Painter](https://iamskab.github.io/Painter)
-![Painter](/screenshots/Painter.png)
+[![image of Painter](painter.gif)](https://iamskab.github.io/Painter/)
 
 
 ## 🚀&nbsp; Installation
