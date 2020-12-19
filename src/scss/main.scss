@@ -443,7 +443,24 @@ main {
                 background-color: #e1302a;
             }
         }
-
+        .cap-selector_button {
+            max-height: 28px;
+            max-width: 28px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background: transparent;
+            padding-top: 2px;
+        }
+        .cap-selector{
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transition: max-height 0.2s ease-in;
+            transition: max-height 0.2s ease-in;
+        }
+        .cap-selectorActive{
+            max-height: 200px;
+        }
         .eraser {
             align-items: center;
         }
