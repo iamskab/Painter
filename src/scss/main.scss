@@ -443,7 +443,15 @@ main {
                 background-color: #e1302a;
             }
         }
-
+        .cap-selector{
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transition: max-height 0.2s ease-in;
+            transition: max-height 0.2s ease-in;
+        }
+        .cap-selectorActive{
+            max-height: 200px;
+        }
         .eraser {
             align-items: center;
         }

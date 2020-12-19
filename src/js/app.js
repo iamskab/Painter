@@ -95,6 +95,13 @@ burger.addEventListener("click", () => {
     }, 50);
 })
 
+// Cap Selector
+const capSelector = document.querySelector(".cap-selector_header");
+capSelector.addEventListener("click", () => {
+    // Toggle active class on the burger and controls container
+    capSelector.classList.toggle("active");
+    document.querySelector(".cap-selector").classList.toggle("cap-selectorActive");
+})
 // Info box
 const infoBtn = document.querySelector("#info");
 const infoBox = document.querySelector(".info-box");
