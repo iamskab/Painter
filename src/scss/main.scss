@@ -532,6 +532,13 @@ main {
                 font-family: "Montserrat SemiBold";
                 font-size: 0.85rem;
                 transition: 0.2s ease;
+                margin-top: 0px;
+                text-transform: uppercase;
+                background-color: #fff;
+                margin-left: 70px;
+                padding: 2px 10px;
+                border: 1px solid gray;
+                color: dodgerblue;
             }
             #exit:hover {
                 color: #e1302a;
@@ -735,6 +742,23 @@ main {
     /* Support for IE. */
     -webkit-font-feature-settings: 'liga';
             font-feature-settings: 'liga';
+  }
+
+  @media (max-width:350px) and (min-width:320px){
+      #exit {
+                cursor: pointer;
+                font-family: "Montserrat SemiBold";
+                font-size: 0.85rem;
+                transition: 0.2s ease;
+                margin-top: 0px;
+                text-transform: uppercase;
+                background-color: #fff;
+                margin-left: 70px;
+                padding: 2px 10px;
+                border: 1px solid gray;
+                color: dodgerblue;
+                margin: 43px 0px 0px 110px;
+            }
   }
 
   @keyframes titleColor {
