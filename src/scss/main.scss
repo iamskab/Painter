@@ -14,6 +14,17 @@ $titleFont: "Montserrat Black";
 $mainFont: "Montserrat Medium";
 $textFont: "Montserrat Bold";
 
+$breakpoint-tablet:(
+    one: 1200px,
+    two: 768px,
+    three: 576px
+);
+
+@function breakpoint($breakpoint-value) {
+    @return map-get($breakpoint-tablet, $breakpoint-value );
+};
+
+
 // Reset margin and padding
 * {
     margin: 0;
@@ -89,10 +100,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    text-align: center;
-    width: 200px;
+    // text-align: center;
+    width: 40%;
+    min-width: 200px;
+    max-width: 600px;
     background-color: color(backgroundCol);
     z-index: 9;
+    @media (max-width: breakpoint(two)) {
+        width: 100%;
+        padding: auto auto;
+    }
 
     #show-warning {
         display: none;
@@ -104,7 +121,16 @@ body {
 
     h3 {
         font-family: $titleFont;
+        font-size: 2rem;
         color: color(titlesColor);
+        line-height: 3rem;
+
+        @media (max-width: breakpoint(one)) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: breakpoint(two)) {
+            font-size: 1.3rem;
+        }
     }
 
     p {
@@ -116,15 +142,19 @@ body {
 
     .input-fields {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        // align-items: center;
         width: 100%;
+        margin: auto auto ;
+        font-size: 1.3rem;
 
         input {
-            width: 80px;
-            padding: 5px;
+            width: 80%;
+            padding: 10px;
+            margin: 5px 5px 5px 0px;
             border: 1px solid rgba(0,0,0,0.4);
             outline-color: #0097e6;
+            border-radius: 5px;
         }
     }
 
@@ -251,7 +281,7 @@ main {
     .controls {
         grid-area: controls;
         background-color: #f5f5f5;
-        width: 230px;
+        width: 250px;
         height: 100%;
         border: 1px solid rgba(0,0,0,0.2);
         border-top: none;
@@ -262,6 +292,7 @@ main {
         left: 0;
         top: 0;
         transition: 0.5s ease;
+        overflow-y: scroll;
 
         * {
             margin: 1px 0;
@@ -576,21 +607,26 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 500px;
     height: 250px;
     padding: 10px;
     text-align: center;
+    @media (max-width: breakpoint(two)) {
+        width: 100%;
+    }
 
     h3 {
         font-family: $titleFont;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: color(placeholder);
         text-transform: uppercase;
     }
 
     p {
         font-family: $mainFont;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin: 10px;
     }
 }
 
