@@ -33,6 +33,11 @@ class Ui {
         this.strLineChecked = false;
     }
 
+    getWindowDimensions() {
+        const { innerWidth: width, innerHeight: height } = window;
+        return [width,height]
+      }
+
     // Reset data
     resetData() {
         // Set defualt canvas properties
@@ -57,6 +62,7 @@ class Ui {
     // Display new project menu
     displayNewProject(action) {
         if(action === "display") {
+            [inputs.widthInput.value,inputs.heightInput.value] = this.getWindowDimensions();
             this.newProjectWindow.style.display = "block";
             this.menu.style.display = "none";
 

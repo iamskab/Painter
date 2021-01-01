@@ -194,8 +194,7 @@ main {
 
     .canvas-container {
         grid-area: canvas;
-
-        position: relative;
+        
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -555,6 +554,7 @@ main {
         transform: translateX(-250px);
 
         .burger-menu {
+            position: absolute;
             right: -70px;
         }
     }
