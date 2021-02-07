@@ -65,6 +65,7 @@ theCanvas.canvas.addEventListener("mousedown", e => {
     theCanvas.isDrawing = true;
     theCanvas.lastX = e.offsetX;
     theCanvas.lastY = e.offsetY;
+    theCanvas.draw(e);
 })
 theCanvas.canvas.addEventListener("mousemove", theCanvas.draw.bind(theCanvas));
 theCanvas.canvas.addEventListener("mouseup", () => theCanvas.isDrawing = false);
